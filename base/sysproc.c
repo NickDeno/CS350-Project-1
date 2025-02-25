@@ -8,6 +8,12 @@
 #include "proc.h"
 
 int
+sys_shutdown(void){
+  outw(0xB004, 0x2000);
+  outw(0x604, 0x2000);
+}
+
+int
 sys_fork(void)
 {
   return fork();

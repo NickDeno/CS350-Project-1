@@ -106,7 +106,7 @@ extern int sys_uptime(void);
 extern int sys_shutdown(void);
 extern int sys_shutdown2(void);
 extern int sys_exit2(void);
-extern int sys_uptime2(int);
+extern int sys_uptime2(void);
 
 static int (*syscalls[])(void) = {
 [SYS_fork]    sys_fork,

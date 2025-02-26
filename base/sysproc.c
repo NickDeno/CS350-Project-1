@@ -41,7 +41,9 @@ sys_exit2(void){
 }
 
 int 
-sys_uptime2(int i){
+sys_uptime2(void){
+  int i;
+  
   uint xticks;
   acquire(&tickslock);
   xticks = ticks;

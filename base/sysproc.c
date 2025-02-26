@@ -40,6 +40,31 @@ sys_exit2(void){
   return 0;  // not reached
 }
 
+int 
+sys_uptime2(int i){
+  uint xticks;
+  acquire(&tickslock);
+  xticks = ticks;
+  release(&tickslock);
+  
+  if (argint(0, &i) < 0){
+    return -1;
+  }
+
+  uint seconds = xticks / 100;
+  int minutes = seconds / 60;
+  // uptime2(1) returns uptime in ticks
+  if (i == 1){
+    return xticks;
+  // uptime2(2) returns uptime in seconds
+  }else if (i == 2){
+     return seconds;
+  //uptime2(3) returns uptime in minutes
+  }else if (i == 3){
+    return minutes;
+  }
+}
+
 int
 sys_fork(void)
 {

@@ -180,6 +180,7 @@ UPROGS=\
 	_shutdown2 \
 	_uptime2 \
 	_mkdir2 \
+	_mkdir3 \
 	_exit2 \
 
 fs.img: mkfs README $(UPROGS)

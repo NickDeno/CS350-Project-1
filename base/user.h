@@ -27,6 +27,8 @@ void shutdown(void);
 void shutdown2(char *msg);
 int exit2(int);
 int uptime2(int);
+void mkdir2(char * d1, char* d2);
+void mkdir3(char * d1, char* d2, char* d3);
 
 // ulib.c
 int stat(char*, struct stat*);

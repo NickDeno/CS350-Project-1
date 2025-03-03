@@ -1,7 +1,7 @@
 We created the custom syscall mkdir3. Similar to mkdir and mkdir2 this syscall takes in arguments to create directories in the current directory the user is in.
 mkdir3 specifically creates 3 directories and can be invoked using the following:
-mkdir3 directory1 directory2 directory3
+mkdir3 directory1 directory2 directory3 where directory1, directory2, and directory3 can be substituted for the directory names of your choice.
 
-where directory1, directory2, and directory3 can be substituted for the directory names of your choice.
-
-Sky completed shutdown2 and exit2. Added the calls to appropriate locations and the logic to retrieve the information provided after the command call. 
+Sky completed shutdown2 and exit2. Added the calls to appropriate locations and the logic to retrieve the information provided after the command call.
+Nicholas completed the shutdown and mkdir2 syscalls
+Cole completed mkdir2 and the bonus custom syscall mkdir3

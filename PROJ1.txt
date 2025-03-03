@@ -3,3 +3,5 @@ mkdir3 specifically creates 3 directories and can be invoked using the following
 mkdir3 directory1 directory2 directory3
 
 where directory1, directory2, and directory3 can be substituted for the directory names of your choice.
+
+Sky completed shutdown2 and exit2. Added the calls to appropriate locations and the logic to retrieve the information provided after the command call. 
